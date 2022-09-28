@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<title>Untitled Document</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script defer src="js/jquery.flexslider.js"></script><!-- 슬라이딩배너 -->
+<script>
+// Can also be used with $(document).ready()
+$(window).load(function() {
+  $('.flexslider').flexslider({
+    animation: "slide"
+  });
+})
+</script><!-- 슬라이딩배너 -->
+<link rel="stylesheet" href="css/flexslider2.css" type="text/css" media="screen"><!-- 슬라이딩배너 -->
+<style>
+	#banner { width:900px; margin:0 auto; }
+</style>
+</head>
+
+<body>
+
+<!-- 슬라이딩배너 -->
+<div id="banner">
+<div class="flexslider">
+    <ul class="slides">
+        <li>
+            <img src="images/01_family.jpg">
+        </li>
+        
+    </ul>
+ <div class="flex-direction-nav">
+  <ul class="flex-direction-nav">
+       <li class="flex-nav-prev">
+       	<a class="flex-prev" href="#">
+       ::before
+       "Previous"		
+       	</a>
+       </li>  
+       
+        <li class="flex-nav-next">
+       	<a class="flex-prev" href="#">
+       ::after
+       "Next"		
+       	</a>
+       </li>  			
+</ul> 	
+</div>       
+</div>
+</div>
+
+</body>
+</html>
